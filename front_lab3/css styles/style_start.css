@@ -1,0 +1,291 @@
+/*Подключение необходимого шрифта для header*/
+@font-face {
+	font-family: "DreiFraktur";
+	src: url("../fonts/DreiFraktur.woff") format("woff");
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Сброс стилей для всех элементов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Основные стили для body */
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-y: scroll;
+  text-align: center;
+}
+
+/* Стили для ссылок */
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:visited {
+  color: #FFFFFF;
+}
+
+a:active {
+  color: #FF0000;
+}
+
+a:hover {
+  color: #FF4500;
+}
+
+/* Стили для главного меню */
+ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+ul li {
+  display: inline-block;  
+  display: inline;
+  margin: 0 60px 0;
+  font-family: DreiFraktur;
+}
+
+ul li a {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Стили для заголовка и изображения */
+.main_img {
+  margin-top: 40px;
+}
+
+.head_1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: DreiFraktur;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main_img img {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	margin-top: 50px;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background-image: url(https://media-1.gorbilet.com/e5/7f/6b/1-min_b7pq5EF.jpg);
+	background-size: cover;
+  	background-position: center;
+  	padding: 50px 0 300px 0;
+  	text-align: center;
+  	background-attachment: scroll;
+}
+
+.main_img {
+	margin-top: 270px;
+
+}
+
+/* Основной стиль для мидл-секции */
+.main_section {
+  padding: 40px;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: left;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Заголовок секции */
+.head_2, .head_3 {
+  color: #fff; /* Цвет заголовков - томатный, гармонирует с белым текстом */
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase; /* Заглавные буквы для эффекта акцента */
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: DreiFraktur;
+}
+
+/* Стили для абзацев */
+.main_section p {
+  background-color: #1f1f1f; 
+  padding: 20px;
+  border-left: 5px solid #FF6347; 
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  line-height: 2;
+  text-align: left;
+  font-family: 'Verdana', sans-serif; 
+  color: #f0f0f0; 
+}
+
+
+/* Дополнительный стиль для абзацев */
+.main_section p font, 
+.main_section h2 font, 
+.main_section h3 font {
+  font-size: 1.1rem;
+}
+
+/*Стили для таблицы альбомов*/
+.albums {
+  margin-top: 90px;
+}
+
+.al_head {
+  color: #fff;
+  font-size: 36px;
+  font-family: DreiFraktur;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.albums_table {
+  width: 80%; 
+  border-collapse: collapse; 
+  margin: 0 auto; 
+  background-color: #1f1f1f; 
+  color: #ffffff; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.albums_table th, .albums_table td {
+  padding: 15px 30px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  font-size: 20px;
+  font-family: DreiFraktur;
+  text-transform: uppercase;
+}
+
+.albums_table thead {
+  background-color: #FF6347; 
+  color: #000000; 
+  font-weight: bold;
+}
+
+.albums_table tbody tr:nth-child(even) {
+  background-color: #333333; 
+}
+
+.albums_table tbody tr:nth-child(odd) {
+  background-color: #2c2c2c; 
+}
+
+.albums_table tbody tr:hover {
+  background-color: #FF6347; 
+  color: #000000;
+  cursor: pointer; 
+}
+
+.albums_table td {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/*Оформление блока с мемом*/
+.Sonne {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1c1c1c; 
+  border-radius: 15px;
+  width: 70%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.meme_head {
+  color: #fff;
+  font-size: 36px;
+  font-family: DreiFraktur;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 15px;
+}
+
+.Sonne p {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: DreiFraktur;
+  margin-bottom: 20px;
+}
+
+.Sonne .reaction {
+	font-size: 28px;
+}
+
+.Sonne .Eins {
+	font-size: 28px;
+	margin-top: 30px;
+}
+
+.Sonne img {
+  border-radius: 10px; 
+  border: 4px solid #FF6347; 
+  transition: transform 0.3s ease; 
+  box-shadow: 0 4px 20px rgba(255, 99, 71, 0.7);
+}
+
+/*Стили для футера*/
+.footer {
+  background-color: #1c1c1c; 
+  padding: 40px 0;
+  color: #fff; 
+  text-align: center;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px; 
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); 
+}
+
+.copyright {
+  font-size: 18px;
+  margin-top: 50px;
+  color: #b3b3b3;
+  font-family: DreiFraktur;
+}
